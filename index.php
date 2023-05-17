@@ -5,7 +5,7 @@ include('inc/nav.php');
 
 ?>
   <div class="container">
-     <div class="form-contant2">
+     <div class="form-list">
         <div class="row">
 		
            <div class="col-sm-12"> 

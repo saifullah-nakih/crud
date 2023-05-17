@@ -58,20 +58,8 @@ header{
 	background:#6B5195;
 	min-height:80px;
 }
-footer{
-	background:#6B5195;
-	min-height:50px;
-}
-footer h3{
-	color:#ffffff;
-	font-size:20px;
-	font-family: 'Poppins', sans-serif;
-	font-weight:bold;
-	line-height:50px;
-	word-spacing:5px;
-}
+
 a.navbar-brand{
-    float: left;
     height: 50px;
     padding: 0px 50px;
     line-height: 70px;
@@ -101,17 +89,17 @@ a.navbar-brand{
 	font-weight:bold;
 	
 }
-.form-contant{
+.form-reg{
 	width:550px;
 	margin:auto;
-	margin-top:20px;
+	margin-top:95px;
 	-webkit-box-shadow:0px 0px 14px 1px #6B5195;
 	-moz-box-shadow:0px 0px 14px 1px #6B5195;
 	box-shadow:0px 0px 14px 0px #6B5195;
-	margin-bottom:40px;
+	margin-bottom:95px;
 	padding-bottom:20px;
 }
-.form-contant-edit{
+.form-reg-edit{
 	width:550px;
 	margin:auto;
 	margin-top:20px;
@@ -122,14 +110,14 @@ a.navbar-brand{
 	padding-bottom:80px;
 }
 
-.form-contant2{
+.form-list{
 	width:100%;
 	margin:auto;
-	margin-top:20px;
+	margin-top:113px;
+	margin-bottom:113px;
 	-webkit-box-shadow:0px 0px 14px 1px #6B5195;
 	-moz-box-shadow:0px 0px 14px 1px #6B5195;
 	box-shadow:0px 0px 14px 0px #6B5195;
-	margin-bottom:40px;
 	padding-bottom:30px;
 	height:605px;
 }
@@ -162,7 +150,6 @@ a.navbar-brand{
 .form-head-add h3{
 	color: #F0F2F7;
 	font-size:25px;
-	font-style:italic;
 	font-weight:bold;
 	font-family: 'Poppins', sans-serif;
 	
@@ -205,7 +192,8 @@ label{
 
 }
 .create button:hover{
-	color: #F0F2F7;
+	background: #0c0b0b;
+	color: #fa00b0;
 }
 .form-control {
     font-size:20px;
@@ -287,7 +275,6 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 .table-top tr th a{
 	color:#ffffff;
 	font-size:18px;
-	font-weight:bold;
 	font-family: 'Poppins', sans-serif;
 }
 .add-number{
@@ -296,5 +283,16 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 }
 .add-number a{
 	font-size:16px;
-	font-weight:bold;
+}
+
+footer{
+	background:#6B5195;
+	min-height:50px;
+}
+footer h3{
+	color:#ffffff;
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+	line-height:50px;
+	word-spacing:5px;
 }

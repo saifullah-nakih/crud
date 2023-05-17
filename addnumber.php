@@ -6,7 +6,7 @@ include('inc/nav.php');
 
 <div class="container">
   <form action="" method="post">
-     <div class="form-contant">
+     <div class="form-reg">
         <div class="row">
            <div class="col-sm-12"> 
 				   <div class="form-head-add">
