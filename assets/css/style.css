@@ -296,3 +296,13 @@ footer h3{
 	line-height:50px;
 	word-spacing:5px;
 }
+
+/* media query for mobile devices */
+@media screen and (max-width: 768px){
+	.form-reg {
+		width: 100%;
+	}
+	a.navbar-brand {
+		padding: 0px 0px;
+	}
+}
