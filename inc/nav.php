@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav  ms-auto" >
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Number List</a>
+            <a class="nav-link" href="index.php">All Contacts</a>
           </li>
 
         </ul>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,800;1,700&display=swap');
 
 
 html, body, div, span, applet, object, iframe,
@@ -65,8 +65,7 @@ footer{
 footer h3{
 	color:#ffffff;
 	font-size:20px;
-	font-style:italic;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight:bold;
 	line-height:50px;
 	word-spacing:5px;
@@ -79,7 +78,6 @@ a.navbar-brand{
 	color:#f0f2f7;
 	font-size:23px;
 	font-weight:bold;
-	font-style:italic;
 	text-decoration:none;
 }
 .navbar-brand i{
@@ -99,8 +97,7 @@ a.navbar-brand{
 .nav li a{
 	color:#F0F2F7;
 	font-size:20px;
-	font-style:italic;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight:bold;
 	
 }
@@ -148,10 +145,10 @@ a.navbar-brand{
 .form-head h3{
 	color: #F0F2F7;
 	font-size:25px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
-	
+	font-family: 'Poppins', sans-serif;
+
+
 }
 .form-head-add{
 	background:#6B5195;
@@ -167,7 +164,7 @@ a.navbar-brand{
 	font-size:25px;
 	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	
 }
 .form-head-edit{
@@ -182,17 +179,15 @@ a.navbar-brand{
 .form-head-edit h3{
 	color: #F0F2F7;
 	font-size:25px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	
 }
 label{
 	color: #66669D;
 	font-size:20px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	padding-bottom:10px;
 	padding-top:0px;
 }
@@ -204,18 +199,17 @@ label{
 .create button{
 	color: #F0F2F7;
 	font-size:20px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background:#6B5195;
+
 }
 .create button:hover{
 	color: #F0F2F7;
 }
 .form-control {
     font-size:20px;
-	font-style:italic;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
     height:45px;
     padding: 5px 20px;
     color: #6B5195;
@@ -233,8 +227,7 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 	margin-right:30px;
 	margin-bottom:10px;
 	font-size:20px;
-	font-style:italic;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
     
 }
 
@@ -256,16 +249,14 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 	text-align:center;
 	color:#F0F2F7;
 	font-size:18px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family:'Poppins', sans-serif;
 	background:#6B5195;
 }
 .table-top tr td{
 	text-align:center;
-	font-style:italic;
 	font-size:17px;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	}
 .table-top tr th.details{
 	text-align:center;
@@ -280,7 +271,6 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
-	font-style:italic;
 }
 .table-top tr td.delete{
 	text-align:center;
@@ -288,20 +278,17 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
-	font-style:italic;
 }
 .table-top tr td.delete a{
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
-	font-style:italic;
 }
 .table-top tr th a{
 	color:#ffffff;
 	font-size:18px;
-	font-style:italic;
 	font-weight:bold;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 .add-number{
 	width:20%;
@@ -310,5 +297,4 @@ input[type="number"],input[type="file"],input[type="email"],input[type="text"],s
 .add-number a{
 	font-size:16px;
 	font-weight:bold;
-	font-style:italic;
 }

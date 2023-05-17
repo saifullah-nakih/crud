@@ -10,7 +10,7 @@ include('inc/nav.php');
         <div class="row">
            <div class="col-sm-12"> 
 				   <div class="form-head-add">
-					  <h3>Contact Number Management System</h3>
+					  <h3>Add Contact</h3>
 				   </div>
 		<?php
 		
@@ -91,7 +91,7 @@ include('inc/nav.php');
 		 
 		 <div class="col-sm-offset-4 col-sm-4">
                   <div class="form-group create">
-		           <button type="submit" class="btn btn-block" name="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Create</button>
+		           <button type="submit" class="btn btn-block justify-content-center align-items-center"" name="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Create</button>
 	              </div>
          </div>
 		 

@@ -41,11 +41,11 @@ include('inc/nav.php');
 					  <h3>Contact Number Management System</h3>
 				   </div>
 	             <div class="add-number">
-				     <a href="addnumber.php" class="btn btn-success">Add Number</a>
+				     <a href="addnumber.php" class="btn btn-success">Add Contacts</a>
 				 </div>
 	<div class="table-responsive table-top">
 	     
-	      <table class="table table-bordered table-condensed table-hover">
+	      <table class="table table-bordered table-condensed ">
 		
 				<tr>
 					  <th width="8%">Id</th>
@@ -89,8 +89,7 @@ include('inc/nav.php');
 		<?php } ?>	
                  
 				 
-				
-				 
+
 				</table>
 		      </div> 
 	       </div>
