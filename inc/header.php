@@ -11,9 +11,10 @@ include('db/db_connect.php');
     <meta name="keyword" content="">
     <meta name="disctiption" content="">
 	
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	
 </head>
 <body>
