@@ -89,8 +89,8 @@ include('inc/nav.php');
 		   </div> 
 	     </div>
 		 
-		 <div class="col-sm-offset-4 col-sm-4">
-                  <div class="form-group create">
+		 <div class="col-sm-offset-4 col-sm-12 col-12">
+                  <div class="form-group create d-flex justify-content-center">
 		           <button type="submit" class="btn btn-block justify-content-center align-items-center"" name="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Create</button>
 	              </div>
          </div>
