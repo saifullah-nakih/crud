@@ -23,16 +23,20 @@ session_start();
                       $result = mysqli_query($conn, $sql);
                       $count = mysqli_num_rows($result);
                       if($count > 0) {
-                        while($row = mysqli_fetch_assoc($result)) {
-                          $_SESSION['id'] = $row['id'];
-                          $_SESSION['username'] = $row['username'];
-                          $_SESSION['password'] = $row['password'];
+                        while($row = mysqli_fetch_assoc($result)){
+                              $_SESSION['login'] = true;
+                              $_SESSION['id'] = $row['id'];
+                              $_SESSION['username'] = $row['username'];
+                              $_SESSION['password'] = $row['password'];
 
                           header('Location: dashboard.php');
                           exit();
                         }
                       } else {
-                        echo 'Username or Password Not Match!';
+                        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              Wrong Username or Passowrd !!
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>';
                       }
                     }
 

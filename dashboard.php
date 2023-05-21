@@ -2,6 +2,10 @@
 global $conn;
 include('inc/header.php');
 include('inc/nav.php');
+if($_SESSION['login'] != true){
+	header('Location: index.php');
+
+}
 
 ?>
   <div class="container">

@@ -17,9 +17,9 @@ include('inc/header.php');
 		
 		   if($_SERVER['REQUEST_METHOD'] =='POST'){
 
-			   $username     = trim($_POST['username']);
-			    $email    = trim($_POST['email']);
-			   $password    = trim($_POST['password']);
+			    $username     = trim($_POST['username']);
+			    $email        = trim($_POST['email']);
+			    $password     = trim($_POST['password']);
 
 			 $sql = "insert into user_reg(username,email,password)
 			 value('$username','$email','$password')";
@@ -28,16 +28,16 @@ include('inc/header.php');
 			
 			if($result){
 				echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
-      This is a primary alert with a close button.
+      Congratulations on creating your profile. <a href="">Here for log in</a>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>' . "<a class='justify-content-center' href='index.php'>Click Here To Login </a>";
+    </div>' ;
 
 
 			}else{
-				echo'<div class="alert alert-warning alert-dismissible" role="alert">
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				   Data Not Inserted  !
-				</div>';
+				echo'<div class="alert alert-danger alert-dismissible fade show" role="alert">
+      Congratulations on creating your profile.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
 			}
 			
 			
