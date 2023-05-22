@@ -21,7 +21,7 @@ include('inc/nav.php');
 		        $email    = trim($_POST['email']);
 		        $person   = trim($_POST['person']);
 		        $city     = trim($_POST['city']);
-			 
+			   //Sql query
 			 $sql = "insert into number_info(name,number,email,person,city)
 			 value('$name','$phone','$email','$person','$city')";
 			

@@ -5,10 +5,23 @@ session_start();
 ?>
 
 <div class="container">
+    <?php
+    if(isset($_GET['neweusercreated'])){
+        echo
+        ' <div class=" alert alert-success alert-dismissible fade show mt-4" role="alert">
+                          New User Created Successfully.
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+    }
+
+    ?>
     <form action="" method="post">
         <div class="form-reg">
+
             <div class="row">
+
                 <div class="col-sm-12">
+
                     <div class="form-head-add">
                         <h3>Log in</h3>
 
@@ -18,8 +31,9 @@ session_start();
                     if(isset($_POST['login'])) {
                       $username = $_POST['username'];
                       $password = $_POST['password'];
+                      $md5_pass = md5( $password );
 
-                      $sql = "SELECT * FROM user_reg WHERE  username = '$username' AND password = '$password'";
+                      $sql = "SELECT * FROM user_reg WHERE  username = '$username' AND password = '$md5_pass'";
                       $result = mysqli_query($conn, $sql);
                       $count = mysqli_num_rows($result);
                       if($count > 0) {
@@ -28,6 +42,8 @@ session_start();
                               $_SESSION['id'] = $row['id'];
                               $_SESSION['username'] = $row['username'];
                               $_SESSION['password'] = $row['password'];
+
+
 
                           header('Location: dashboard.php');
                           exit();
@@ -76,6 +92,21 @@ session_start();
         </div>
     </form>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var autoHideAlert = document.getElementById('autoHideAlert');
+        var alertCloseButton = autoHideAlert.querySelector('.btn-close');
+
+        var alertTimeout = setTimeout(function () {
+            alertCloseButton.click(); // Simulate click on close button
+        }, 5000);
+
+        alertCloseButton.addEventListener('click', function () {
+            clearTimeout(alertTimeout);
+        });
+    });
+</script>
 
 <?php
 include('inc/footer.php');

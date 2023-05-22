@@ -16,10 +16,12 @@ if($_SESSION['login'] != true){
 		
            <div class="col-sm-12"> 
 	     <?php
+		 //data deletation query
+
 		 if(isset($_GET['deleteid'])){
 			 
 			 $id = $_GET['deleteid'];
-		  
+			 //Sql query
 			$del = "delete from  number_info where id ='$id'";
 			
 			 $delete = mysqli_query($conn,$del);

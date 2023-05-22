@@ -14,58 +14,77 @@ include('inc/header.php');
 
 				   </div>
 		<?php
-		
-		   if($_SERVER['REQUEST_METHOD'] =='POST'){
+   //empty variable declare
+		$usererr = $emailrerr = $passrerr = $compasserr = '';
 
-			    $username     = trim($_POST['username']);
-			    $email        = trim($_POST['email']);
-			    $password     = trim($_POST['password']);
+		   if(isset($_POST['submit'])) {
 
-			 $sql = "insert into user_reg(username,email,password)
-			 value('$username','$email','$password')";
-			
-			   $result = mysqli_query($conn,$sql);
-			
-			if($result){
-				echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
-      Congratulations on creating your profile. <a href="">Here for log in</a>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>' ;
+			   $username = $_POST['username'];
+			   $email = $_POST['email'];
+			   $password = $_POST['password'];
+			   $confirmpassword = $_POST['confirmpassword'];
+
+			   $md5_pass = md5( $password );
+			   $md5_compass = md5( $confirmpassword);
+			   
+			   //Data validation
+			   if (empty($username)) {
+				   $usererr = '<p class="text-danger">Enter username*</p>';
+			   }
+			   if (empty($email)) {
+				   $emailrerr = '<p class="text-danger">Enter Your Email*</p>';
+			   }
+			   if (empty($password)) {
+				   $passrerr = '<p class="text-danger">Enter Password*</p>';
+			   }
+			   if (empty($confirmpassword)) {
+				   $compasserr = '<p class="text-danger">Confirm Pass*</p>';
+			   }
+			   if(!empty($username) && !empty($email) && !empty($password) && !empty($confirmpassword)){
+                     if($password === $confirmpassword){
+						 //Insert Sql data
+						 $sql = "insert into user_reg(username,email,password,confirmpassword)
+			              value('$username','$email','$md5_pass',' $md5_compass')";
+						  $result = mysqli_query($conn,$sql);
+						  header('location: index.php?neweusercreated');
+
+				   }else{
+						 echo '<p class="text-danger">Password Not Matched*</p>';
+					 }
+			   }
 
 
-			}else{
-				echo'<div class="alert alert-danger alert-dismissible fade show" role="alert">
-      Congratulations on creating your profile.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>';
-			}
-			
-			
-			
 		   }
-		    
-		
-		
 		?>		 
-
-
-
 
 				 
 	  <div class="form-box">
 	  
 				 <div class="form-group">
+
 					<label>Username : </label>
-					<input type="text" class="form-control"  name="username" placeholder="Enter Contact Name" required autocomplete >
+					 <?php  if(isset($_POST['submit'])){ echo $usererr ;}?>
+					<input type="text" class="form-control"  name="username" placeholder="Enter Contact Name" value="<?php if(isset($_POST['submit'])){ echo $username ;} ?>"  >
+
 				 </div>
 				 
 				 <div class="form-group">
 					<label>Email : </label>
-					<input type="email" class="form-control"  name="email" placeholder="Enter Email" required autocomplete>
+					 <?php  if(isset($_POST['submit'])){ echo $emailrerr ;}?>
+					<input type="email" class="form-control"  name="email" placeholder="Enter Email" value="<?php if(isset($_POST['submit'])){ echo $email ;} ?>">
 				 </div>
 		  <div class="form-group">
 			  <label>Password </label>
-			  <input type="password" class="form-control"  name="password" placeholder=" Enter Password" required maxlength="11" autocomplete>
+			  <?php  if(isset($_POST['submit'])){ echo $passrerr ;}?>
+
+			  <input type="password" class="form-control"  name="password" placeholder=" Enter Password" >
+		  </div>
+
+		  <div class="form-group">
+
+			  <label>Confirm Password</label>
+			  <?php  if(isset($_POST['submit'])){ echo $compasserr ;}?>
+			  <input type="password" class="form-control"  name="confirmpassword" placeholder=" Confirm Password" >
 		  </div>
 
 		   </div> 

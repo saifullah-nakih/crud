@@ -66,7 +66,7 @@ $edit = $_GET['editid'];
 					<div class="form-box">
 
 						<?php
-
+						//Sql query
 						$sql ="select * from number_info where id= '$edit'";
 						$editdata = mysqli_query($conn,$sql);
 
